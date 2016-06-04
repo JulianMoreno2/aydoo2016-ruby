@@ -7,4 +7,10 @@ describe 'Factorizador' do
     factorizador = Factorizador.new
     expect(factorizador.factorizar(2)).to eq 2
   end
+
+  it 'deberia retornar 3 cuando factorizar(3)' do
+    factorizador = Factorizador.new
+    expect(factorizador.factorizar(3)).to eq 3
+  end
+
 end
