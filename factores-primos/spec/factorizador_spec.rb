@@ -7,5 +7,4 @@ describe 'Factorizador' do
     factorizador = Factorizador.new
     expect(factorizador.factorizar(2)).to eq 2
   end
-
 end
