@@ -2,6 +2,7 @@
 set -e
 for dir in */ ; do
    cd $dir
-   rake
+   bundle install
+   bundle exec rake
    cd ..
 done
