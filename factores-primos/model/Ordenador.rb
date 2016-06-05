@@ -1,5 +1,5 @@
 class Ordenador
-	def ordenar(factores)
+	def ordenar(factores,orden)
 		return factores
 	end
 end
