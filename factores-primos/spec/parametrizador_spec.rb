@@ -23,4 +23,9 @@ describe 'Parametrizador' do
     expect(parametrizador.alinear_parametros(["20","--format=pretty","--sort:asc"])).to eq ["20","pretty","asc",""]
   end
 
+  it 'deberia retornar ["20","pretty","des",""] cuando alinearParametros("20","--format=pretty","--sort:des")' do
+    parametrizador = Parametrizador.new
+    expect(parametrizador.alinear_parametros(["20","--format=pretty","--sort:des"])).to eq ["20","pretty","des",""]
+  end
+
 end
