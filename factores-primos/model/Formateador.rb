@@ -1,6 +1,8 @@
 class Formateador
 	def formatear(factores)
-		factores[0] = factores[0].to_s + " "
+		for i in 0...factores.length
+			factores[i] = factores[i].to_s + " "
+		end
 		return factores
 	end
 end
