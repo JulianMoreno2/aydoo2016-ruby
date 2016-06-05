@@ -5,6 +5,10 @@ class Formateador
 			for i in 0...factores.length
 				factores[i] = factores[i].to_s + " "
 			end
+		elsif formato == "quiet"
+			for i in 0...factores.length
+				factores[i] = factores[i].to_s + "\n"
+			end			
 		end
 		return factores
 	end
