@@ -2,7 +2,10 @@ class Parametrizador
 
 	def alinear_parametros(parametros)
 
-		parametros[0] = parametros[0].to_i
+		if parametros.length > 1
+			opcion = parametros[1].split("=")
+			parametros[1] = opcion[1]
+		end
 		return parametros
 	end
 
