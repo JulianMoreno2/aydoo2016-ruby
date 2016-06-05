@@ -17,4 +17,9 @@ describe 'Ordenador' do
     formateador = Ordenador.new
     expect(formateador.ordenar(["2","3"],"asc")).to eq ["2","3"]
   end
+
+  it 'deberia retornar ["3","2"] cuando ordenar(["2","3"],"des")' do
+    formateador = Ordenador.new
+    expect(formateador.ordenar(["2","3"],"des")).to eq ["3","2"]
+  end
 end
