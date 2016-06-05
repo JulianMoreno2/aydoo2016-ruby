@@ -33,4 +33,13 @@ describe 'Parametrizador' do
     expect(parametrizador.alinear_parametros(["10","--sort:asc","--format=pretty"])).to eq ["10","pretty","asc",""]
   end
 
+  it 'deberia retornar ["10","quiet","des",""] cuando alinearParametros("10","--sort:des","--format=quiet)' do
+    parametrizador = Parametrizador.new
+    expect(parametrizador.alinear_parametros(["10","--sort:des","--format=quiet"])).to eq ["10","quiet","des",""]
+  end
+
+  it 'deberia retornar ["10","quiet","","salida.txt"] cuando alinearParametros("10","--format=pretty","--output-file=salida.txt")' do
+    parametrizador = Parametrizador.new
+    expect(parametrizador.alinear_parametros(["10","--format=pretty","--output-file=salida.txt"])).to eq ["10","pretty","","salida.txt"]
+  end 
 end
