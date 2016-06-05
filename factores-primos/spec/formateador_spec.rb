@@ -3,18 +3,23 @@ require_relative '../model/Formateador'
 
 describe 'Formateador' do
 
-	it 'deberia retornar ["2 "] cuando formatear([2])' do
+	it 'deberia retornar ["2 "] cuando formatear([2],"")' do
     formateador = Formateador.new
-    expect(formateador.formatear([2])).to eq ["2 "]
+    expect(formateador.formatear([2],"")).to eq ["2 "]
   end  
 
-  it 'deberia retornar ["2 ","2 "] cuando factorizar([2,2])' do
+  it 'deberia retornar ["2 ","2 "] cuando factorizar([2,2],"")' do
     formateador = Formateador.new
-    expect(formateador.formatear([2,2])).to eq ["2 ","2 "]
+    expect(formateador.formatear([2,2],"")).to eq ["2 ","2 "]
   end
 
-  it 'deberia retornar ["2 ","2 ","2 "] cuando factorizar([2,2,2])' do
+  it 'deberia retornar ["2 ","2 ","2 "] cuando factorizar([2,2,2],"")' do
     formateador = Formateador.new
-    expect(formateador.formatear([2,2,2])).to eq ["2 ","2 ","2 "]
+    expect(formateador.formatear([2,2,2],"")).to eq ["2 ","2 ","2 "]
+  end
+
+  it 'deberia retornar ["2 ","2 ","2 "] cuando factorizar([2,2,2],"pretty")' do
+    formateador = Formateador.new
+    expect(formateador.formatear([2,2,2],"pretty")).to eq ["2 ","2 ","2 "]
   end
 end
