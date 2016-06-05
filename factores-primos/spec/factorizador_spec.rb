@@ -42,4 +42,9 @@ describe 'Factorizador' do
     factorizador = Factorizador.new
     expect(factorizador.factorizar(20)).to eq [2,2,5]
   end
+
+  it 'deberia retornar [2,3,3,5] cuando factorizar(90)' do
+    factorizador = Factorizador.new
+    expect(factorizador.factorizar(90)).to eq [2,3,3,5]
+  end
 end
