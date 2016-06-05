@@ -1,9 +1,9 @@
 class Ordenador
 	def ordenar(factores,orden)
-
 		if orden == "des"
-			factores.reverse!
+			return factores.reverse
+		elsif orden == "asc" || orden == ""
+			return factores				
 		end
-		return factores
 	end
 end
