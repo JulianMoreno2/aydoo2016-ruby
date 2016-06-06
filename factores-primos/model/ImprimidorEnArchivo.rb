@@ -3,7 +3,7 @@ class ImprimidorEnArchivo
 	def imprimir(factores)		
 		print 
 		File.open "#{@archivo}", "w" do |file|
-			file.write("Factores primos de #{factores[0]}: ")
+			file.write("Factores primos #{factores[0]}: ")
 			for i in 1...factores.length
 				file.write("#{factores[i]}")
 			end
