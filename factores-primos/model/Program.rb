@@ -1,6 +1,6 @@
-require_relative '../model/Factorizador'
+require_relative '../model/SeleccionadorDeOpciones'
 
-array_entrada = ARGV
+array = ARGV
 
-factorizador = Factorizador.new
-puts "#{factorizador.factorizar(array_entrada[0].to_i)}"
+selector = SeleccionadorDeOpciones.new
+selector.ejecutar(array)
