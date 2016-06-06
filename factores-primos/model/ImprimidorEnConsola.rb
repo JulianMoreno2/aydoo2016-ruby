@@ -1,9 +1,9 @@
 class ImprimidorEnConsola
-	def imprimir(factores)
+	def imprimir(factores)		
 		salida = "Factores primos de #{factores[0]}: "
 		for i in 1...factores.length
-			print factores[1]
-			salida = salida + factores[i]
+			print "#{factores[i]}"
+			salida = salida << factores[i].to_s
 		end
 		return "#{salida}"
 	end

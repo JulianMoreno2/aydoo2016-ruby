@@ -1,17 +1,19 @@
 class Formateador
 	def formatear(factores, formato)
 
-		factores[0] = factores[0].to_s
+		factores_formateados = [""]
+
+		factores_formateados[0] = "#{factores[0]}"
 
 		if formato == "" || formato == "pretty"
 			for i in 1...factores.length
-				factores[i] = factores[i].to_s + " "
+				factores_formateados << "#{factores[i]} "
 			end
 		elsif formato == "quiet"
 			for i in 1...factores.length
-				factores[i] = factores[i].to_s + "\n"
+				factores_formateados << "#{factores[i]}\n"
 			end			
 		end
-		return factores
+		return factores_formateados
 	end
 end

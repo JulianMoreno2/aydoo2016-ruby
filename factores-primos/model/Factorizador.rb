@@ -1,7 +1,7 @@
 class Factorizador
 	def factorizar(numero)
 		factor = 2
-		factorizacion = []
+		factorizacion = [numero]
 
 		if numero < 2
 			factorizacion << numero
