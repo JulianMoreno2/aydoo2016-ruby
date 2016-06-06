@@ -22,4 +22,9 @@ describe 'SeleccionadorDeOpciones' do
     seleccionador = SeleccionadorDeOpciones.new
     expect(seleccionador.ejecutar(["8","--format=quiet"])).to eq "Factores primos de 8: 2\n2\n2\n"
   end
+
+  it "deberia retornar 'Factores primos de 6: 2\n3\n' cuando ejecutar(['6','--format=quiet','--sort:asc'])" do
+    seleccionador = SeleccionadorDeOpciones.new
+    expect(seleccionador.ejecutar(["6","--format=quiet","--sort:asc"])).to eq "Factores primos de 6: 2\n3\n"
+  end
 end
