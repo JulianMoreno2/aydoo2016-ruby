@@ -1,9 +1,9 @@
-require_relative '../model/factorizador'
-require_relative '../model/ordenador'
-require_relative '../model/parametrizador'
-require_relative '../model/formateador'
-require_relative '../model/imprimidor_en_consola'
-require_relative '../model/imprimidor_en_archivo'
+require_relative '../metadata/factorizador'
+require_relative '../metadata/ordenador'
+require_relative '../metadata/parametrizador'
+require_relative '../metadata/formateador'
+require_relative '../metadata/imprimidor_en_consola'
+require_relative '../metadata/imprimidor_en_archivo'
 
 class SeleccionadorDeOpciones
 

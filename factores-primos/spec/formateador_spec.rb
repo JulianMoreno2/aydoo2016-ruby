@@ -1,5 +1,5 @@
 require 'rspec' 
-require_relative '../model/formateador'
+require_relative '../model/metadata/formateador'
 
 describe 'Formateador' do
 

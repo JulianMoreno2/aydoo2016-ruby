@@ -1,5 +1,5 @@
 require 'rspec' 
-require_relative '../model/ordenador'
+require_relative '../model/metadata/ordenador'
 
 describe 'Ordenador' do
 

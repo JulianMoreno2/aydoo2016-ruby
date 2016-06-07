@@ -1,4 +1,5 @@
 class Ordenador
+	
 	def ordenar(factores,orden)
 
 		factores_ordenados = [factores[0]]

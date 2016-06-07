@@ -1,4 +1,4 @@
-require_relative '../model/seleccionador_de_opciones'
+require_relative '../model/metadata/seleccionador_de_opciones'
 
 array = ARGV
 
