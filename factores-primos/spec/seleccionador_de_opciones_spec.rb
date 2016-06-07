@@ -1,5 +1,5 @@
 require 'rspec' 
-require_relative '../model/SeleccionadorDeOpciones'
+require_relative '../model/seleccionador_de_opciones'
 
 describe 'SeleccionadorDeOpciones' do
 

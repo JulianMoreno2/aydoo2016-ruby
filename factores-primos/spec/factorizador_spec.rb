@@ -1,5 +1,5 @@
 require 'rspec' 
-require_relative '../model/Factorizador'
+require_relative '../model/factorizador'
 
 describe 'Factorizador' do
 

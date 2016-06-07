@@ -1,5 +1,5 @@
 require 'rspec' 
-require_relative '../model/Parametrizador'
+require_relative '../model/parametrizador'
 
 describe 'Parametrizador' do
 

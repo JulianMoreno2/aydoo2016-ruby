@@ -1,5 +1,5 @@
 require 'rspec' 
-require_relative '../model/ImprimidorEnArchivo'
+require_relative '../model/imprimidor_en_archivo'
 
 describe 'ImprimidorEnArchivo' do
 
