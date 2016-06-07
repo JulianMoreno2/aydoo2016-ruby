@@ -1,9 +1,9 @@
-require_relative '../model/Factorizador'
-require_relative '../model/Ordenador'
-require_relative '../model/Parametrizador'
-require_relative '../model/Formateador'
-require_relative '../model/ImprimidorEnConsola'
-require_relative '../model/ImprimidorEnArchivo'
+require_relative '../model/factorizador'
+require_relative '../model/ordenador'
+require_relative '../model/parametrizador'
+require_relative '../model/formateador'
+require_relative '../model/imprimidor_en_consola'
+require_relative '../model/imprimidor_en_archivo'
 
 class SeleccionadorDeOpciones
 
@@ -15,9 +15,9 @@ class SeleccionadorDeOpciones
 	end
 
 	def ejecutar(parametros)
-		@parametros_alineados = @parametrizador.alinear_parametros(parametros)		
 		@factores = @factorizador.factorizar(parametros[0].to_i)
-
+		@parametros_alineados = @parametrizador.alinear_parametros(parametros)		
+		
 		@factores_formateados = @formateador.formatear(@factores, @parametros_alineados[1])
 		@factores_ordenados = @ordenador.ordenar(@factores_formateados,@parametros_alineados[2])
 		

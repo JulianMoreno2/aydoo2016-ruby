@@ -1,8 +1,14 @@
+require_relative '../model/numero_invalido_exception'
+
 class Factorizador
 	def factorizar(numero)
+
+		if numero < 1
+			raise NumeroInvalidoException, "El numero ingresado debe ser mayor a 0"
+		end 
+		
 		factor = 2
 		factorizacion = [numero]
-
 		if numero < 2
 			factorizacion << numero
 		else
